@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
 
-  Your Result
-  76
-  of 100
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="left">
+        <h3 class="section-title">Your Result</h3>
+        <div class="score-container">
+          <span class="score">76</span>
+          <span class="total">of 100</span>
+        </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+        <h2 class="remark">Great</h2>
+        <p class="description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
 
-  Reaction
-  80 / 100
+      <section class="right">
+        <h3 class="section-title">Summary</h3>
 
-  Memory
-  92 / 100
+        <div class="categories-container">
+          <div class="category-container red">
+            <img class="category-img" src="./assets/images/icon-reaction.svg" />
+            <h4 class="category-title">Reaction</h4>
+            <h4 class="category-score">
+              80 &nbsp;<span class="total">/ 100</span>
+            </h4>
+          </div>
+          <div class="category-container yellow">
+            <img class="category-img" src="./assets/images/icon-memory.svg" />
+            <h4 class="category-title">Memory</h4>
+            <h4 class="category-score">
+              92 &nbsp;<span class="total">/ 100</span>
+            </h4>
+          </div>
+          <div class="category-container green">
+            <img class="category-img" src="./assets/images/icon-verbal.svg" />
+            <h4 class="category-title">Verbal</h4>
+            <h4 class="category-score">
+              61 &nbsp;<span class="total">/ 100</span>
+            </h4>
+          </div>
+          <div class="category-container blue">
+            <img class="category-img" src="./assets/images/icon-visual.svg" />
+            <h4 class="category-title">Visual</h4>
+            <h4 class="category-score">
+              72 &nbsp;<span class="total"> / 100</span>
+            </h4>
+          </div>
+        </div>
+        <button class="btn-continue">Continue</button>
+      </section>
+    </div>
 
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Kushal</a>.
+    </div>
+  </body>
 </html>
